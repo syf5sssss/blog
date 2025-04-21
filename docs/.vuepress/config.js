@@ -5,7 +5,8 @@ import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
   lang: 'zh-CN',
-
+  dest: './dist/blog',
+  base: '/blog/',
   title: 'syf5sssss',
   description: '学习笔记',
 
