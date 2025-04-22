@@ -34,8 +34,13 @@ This is the content of home page. Check [Home Page Docs][default-theme-home] for
 
 
 npm run docs:dev
+
 npm run docs:build
+
 pages的设置需要选择gh-pages分支的docs
+
 部署的时候需要将打包到dist的文件上传到gh-pages目录的docs目录下
+
 本地测试需要将dist的文件复制到blog目录下，http-server启动即可，如有文件加载问题，清空浏览器缓存即可。
+
 dist->gh-pages/docs
