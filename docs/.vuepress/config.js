@@ -8,7 +8,7 @@ const __dirname = getDirname(import.meta.url)
 export default defineUserConfig({
   lang: 'zh-CN',
   dest: 'dist',
-  base: '/',
+  base: '/blog/',
   title: 'syf5sssss',
   description: '学习笔记',
 
