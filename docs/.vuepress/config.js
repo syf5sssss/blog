@@ -2,13 +2,24 @@ import { blogPlugin } from '@vuepress/plugin-blog'
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
+import { getDirname, path } from '@vuepress/utils'
+const __dirname = getDirname(import.meta.url)
 
 export default defineUserConfig({
   lang: 'zh-CN',
-  dest: './dist/blog',
-  base: '/blog/',
+  dest: 'dist',
+  base: '/',
   title: 'syf5sssss',
   description: '学习笔记',
+
+  // 新增静态资源配置
+  patterns: [
+    {
+      glob: '**/*.{png,jpg,jpeg,gif,svg}',
+      dir: path.resolve(__dirname, '../img'), // 指向 docs/img 目录
+      outDir: 'img' // 输出到 dist/img
+    }
+  ],
 
   theme: defaultTheme({
     logo: 'https://vuejs.press/images/hero.png',
