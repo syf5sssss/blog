@@ -9,6 +9,7 @@ export default defineUserConfig({
   lang: 'zh-CN',
   dest: 'dist',
   base: '/blog/',
+  publicPath: '/blog/',
   title: 'syf5sssss',
   description: '学习笔记',
 
